@@ -1,6 +1,5 @@
-[![Build Status](https://travis-ci.org/freewil/yesp.svg)](https://travis-ci.org/freewil/yesp)
+# yesp [![Build Status](https://travis-ci.org/freewil/yesp.svg)](https://travis-ci.org/freewil/yesp)
 
-# yesp
 Simple to use, fast, and with zero dependencies.  The Node One Time Password
 library is fully compliant with [HOTP](http://tools.ietf.org/html/rfc4226)
 (counter based one time passwords) and [TOTP](http://tools.ietf.org/html/rfc6238)
