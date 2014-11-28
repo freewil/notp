@@ -1,18 +1,25 @@
-[![Build Status](https://travis-ci.org/guyht/notp.svg)](https://travis-ci.org/guyht/notp)
+[![Build Status](https://travis-ci.org/freewil/yesp.svg)](https://travis-ci.org/freewil/yesp)
 
-# Node One Time Password library
- Simple to use, fast, and with zero dependencies.  The Node One Time Password library is fully compliant with [HOTP](http://tools.ietf.org/html/rfc4226) (counter based one time passwords) and [TOTP](http://tools.ietf.org/html/rfc6238) (time based one time passwords).  It can be used in conjunction with the [Google Authenticator](http://code.google.com/p/google-authenticator/) which has free apps for iOS, Android and BlackBerry.
+# yesp
+Simple to use, fast, and with zero dependencies.  The Node One Time Password
+library is fully compliant with [HOTP](http://tools.ietf.org/html/rfc4226)
+(counter based one time passwords) and [TOTP](http://tools.ietf.org/html/rfc6238)
+(time based one time passwords).  It can be used in conjunction with the
+[Google Authenticator](http://code.google.com/p/google-authenticator/) which has
+free apps for iOS, Android and BlackBerry.
+
+This is a fork of [notp](https://github.com/guyht/notp), with [this pull request](https://github.com/guyht/notp/pull/10).
 
 # Installation
 
 ```
-npm install notp
+npm install yesp
 ```
 
 # Usage
 
 ```javascript
-var notp = require('notp');
+var yesp = require('yesp');
 
 //.... some initial login code, that receives the user details and TOTP / HOTP token
 
@@ -20,7 +27,7 @@ var key = 'secret key for user... could be stored in DB';
 var token = 'user supplied one time use token';
 
 // Check TOTP is correct (HOTP if hotp pass type)
-var login = notp.totp.verify(token, key);
+var login = yesp.totp.verify(token, key);
 
 // invalid token if login is null
 if (!login) {
@@ -118,10 +125,10 @@ All of the APIs have been changed to return values directly instead of using cal
 
 Some of the required arguments to the functions have also been removed from the `args` parameter and are passed as separate function parameters. See the above API docs for details.
 
-* `notp.checkHOTP(args, err, cb)` -> `notp.hotp.verify(token, key, opt)`
-* `notp.checkTOTP(args, err, cb)` -> `notp.totp.verify(token, key, opt)`
-* `notp.getHOTP(args, err, cb)` -> `notp.gotp.gen(key, opt)`
-* `notp.getTOTP(args, err, cb)` -> `notp.totp.gen(key, opt)`
+* `yesp.checkHOTP(args, err, cb)` -> `yesp.hotp.verify(token, key, opt)`
+* `yesp.checkTOTP(args, err, cb)` -> `yesp.totp.verify(token, key, opt)`
+* `yesp.getHOTP(args, err, cb)` -> `yesp.gotp.gen(key, opt)`
+* `yesp.getTOTP(args, err, cb)` -> `yesp.totp.gen(key, opt)`
 
 ## Args
 
