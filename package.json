@@ -13,7 +13,7 @@
     "test": "NODE_ENV=test mocha"
   },
   "engines": {
-    "node": "> v0.6.0"
+    "node": ">=0.10.0"
   },
   "dependencies": {
     "scmp": "^1.0.0"
