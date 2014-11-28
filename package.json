@@ -2,7 +2,7 @@
   "author": "Guy Halford-Thompson <guy@guy.ht> (http://guy.ht)",
   "name": "yesp",
   "description": "Node One Time Password library, supports HOTP, TOTP and works with Google Authenticator",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "homepage": "https://github.com/freewil/yesp",
   "repository": {
     "type": "git",
