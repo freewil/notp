@@ -1,9 +1,9 @@
 # yesp [![Build Status](https://travis-ci.org/freewil/yesp.svg)](https://travis-ci.org/freewil/yesp)
 
-Simple to use, fast, and with zero dependencies.  The Node One Time Password
-library is fully compliant with [HOTP](http://tools.ietf.org/html/rfc4226)
+Simple to use and fast! The Node One Time Password library is fully compliant
+with [HOTP](http://tools.ietf.org/html/rfc4226)
 (counter based one time passwords) and [TOTP](http://tools.ietf.org/html/rfc6238)
-(time based one time passwords).  It can be used in conjunction with the
+(time based one time passwords). It can be used in conjunction with the
 [Google Authenticator](http://code.google.com/p/google-authenticator/) which has
 free apps for iOS, Android and BlackBerry.
 
